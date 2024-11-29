@@ -19,6 +19,10 @@ app.get('/data', (req, res) => {
   res.json(latestData);
 });
 
+app.get("/", (req, res) => {
+    res.json("Hello");
+  });
+
 app.post('/alarm/on', (req, res) => {
   if (!alarmStatus) {
     serialPort.write('1', (err) => {
