@@ -15,7 +15,7 @@ void loop() {
   String status = "Normal";
 
   if (alarmOn) {
-    if (smokeLevel > 610) {
+    if (smokeLevel > 650) {
       digitalWrite(buzzerPin, HIGH);
       digitalWrite(ledPin, HIGH);
       status = "Bahaya, Asap Terdeteksi";
